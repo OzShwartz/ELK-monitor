@@ -1,0 +1,13 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+  - /usr/share/filebeat/logs/btc_val.log
+
+output.logstash:
+  hosts: ["logstash:5044"]
+
+logging.level: debug
+
+
+# logging.level: debug
